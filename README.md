@@ -40,4 +40,4 @@ After jobs are successfully run, go to subdir `PRScs/$outdir/PRScs.out` and merg
 1) load R environment or conda
 2) Execute the following script:
 
-`Rscript --vanilla PRScs2daner.R daner.gz PRScs.output.txt`
+`Rscript --vanilla PRScs2daner.R daner.NAME.gz PRScs.output.txt`
