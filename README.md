@@ -15,7 +15,7 @@ Create a new folder in working directory and move transformed sumstats into the 
 
 ## Run PRScs using job scripts
 
-This script may need adaptation depending on server & available environments. 
+*This script may need adaptation depending on server & available environments.*
 
 Replace the following variables: 
 
@@ -33,7 +33,7 @@ This script will generate PRScs job scripts for each chromosome and submit these
 
 After jobs are successfully run, go to subdir `PRScs/$outdir/PRScs.out` and merge output from all chromosomes:
 
-`wc -l *txt`
+`wc -l *txt > PRScs.output.txt`
 
 ## Convert PRScs output to daner formatted summary statistics
 
