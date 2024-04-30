@@ -17,7 +17,14 @@ Create a new folder in working directory and move transformed sumstats into the 
 
 This script may need adaptation depending on server & available environments. 
 
-Replace at least the following variables: bimfile (target sample), bimloc, outname, file (sumstats), samplesize (GWAS sample size) and condaenv (name of your conda env)
+Replace at least the following variables: 
+
+* bimfile (bim file of target sample)
+* bimloc (path to bim file)
+* outname (name of output files)
+* file (transformed input sumstats)
+* samplesize (GWAS sample size)
+* condaenv (name of your conda env)
 
 This script will generate PRScs job scripts for each chromosome and submit these to the cluster.
 
