@@ -17,11 +17,12 @@ Create a new folder in working directory and move transformed sumstats into the 
 
 This script may need adaptation depending on server & available environments. 
 
-Replace at least the following variables: 
+Replace the following variables: 
 
 * bimfile (bim file of target sample)
 * bimloc (path to bim file)
 * outname (name of output files)
+* outdir (name of output directory, useful for multiple runs)
 * file (transformed input sumstats)
 * samplesize (GWAS sample size)
 * condaenv (name of your conda env)
@@ -36,6 +37,7 @@ After jobs are successfully run, go to subdir `PRScs/$outdir/PRScs.out` and merg
 
 ## Convert PRScs output to daner formatted summary statistics
 
-load R environment or conda
+1) load R environment or conda
+2) Execute the following script:
 
 `Rscript --vanilla PRScs2daner.R daner.gz PRScs.output.txt`
