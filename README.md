@@ -15,7 +15,17 @@ Create a new folder in working directory and move transformed sumstats into the 
 
 ## Run PRScs using job scripts
 
+This script may need adaptation depending on server & available environments. 
+
+Replace at least the following variables: bimfile (target sample), bimloc, outname, file (sumstats), samplesize (GWAS sample size) and condaenv (name of your conda env)
+
+This script will generate PRScs job scripts for each chromosome and submit these to the cluster.
+
 `./jk_PRScs_1KG_chariteHPC.sh`
+
+After jobs are successfully run, go to subdir `PRScs/$outdir/PRScs.out` and merge output from all chromosomes:
+
+`wc -l *txt`
 
 ## Convert PRScs output to daner formatted summary statistics
 
