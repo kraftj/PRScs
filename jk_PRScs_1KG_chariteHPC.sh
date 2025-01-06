@@ -49,7 +49,7 @@ cp ${bimloc}/${bimfile}.bim \$TMPDIRP
 cd \$TMPDIRP
 
 # Conda initialization in the bash shell 
-eval \"\$(/opt/conda/bin/conda shell.bash hook)\"
+source /etc/profile.d/conda.sh
 
 # Activate conda virtual environment
 conda activate ${condaenv}            
