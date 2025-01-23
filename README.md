@@ -31,15 +31,21 @@ Replace the following variables:
 
 This script will generate PRScs job scripts for each chromosome and submit these to the cluster.
 
-`./jk_PRScs_1KG_chariteHPC.sh`
+```
+./jk_PRScs_1KG_chariteHPC.sh
+```
 
 After jobs are successfully run, go to subdir `PRScs/$outdir/PRScs.out` and merge output from all chromosomes:
 
-`wc -l *txt > PRScs.output.txt`
+```
+wc -l *txt > PRScs.output.txt
+```
 
 ## Convert PRScs output to daner formatted summary statistics
 
 1) load R environment or conda
 2) Execute the following script:
 
-`Rscript --vanilla PRScs2daner.R daner.NAME.gz PRScs.output.txt`
+```
+Rscript --vanilla PRScs2daner.R daner.NAME.gz PRScs.output.txt
+```
