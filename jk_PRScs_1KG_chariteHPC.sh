@@ -97,15 +97,3 @@ tmpdirp="/sc-scratch/sc-scratch-cc15-ripke-lab"
 echo "rm $tmpdirp/${file}" > clearscratch 
 echo "rm $tmpdirp/${bimfile}.bim" >> clearscratch
 echo "rm $tmpdirp/${outname}*" >> clearscratch
-
-
-## INITIAL script
-#python /sc-projects/sc-proj-cc15-ripke-lab/software/PRScs/PRScs.py \
-#--ref_dir=/sc-projects/sc-proj-cc15-ripke-lab/software/PRScs/ldblk_1kg_eur \
-#--bim_prefix=PRScs_r1/cvd_belv1_eur_jk-qc3.hg19.ch.fl.bgn \
-#--sst_file=prsCS_sum.CAD_CARDIoGRAMplusC4D.trans.hrc.h.gz \
-#--n_gwas=184305 \
-#--out_dir=PRScs_r1 #\
-#--chrom=22
-
-
